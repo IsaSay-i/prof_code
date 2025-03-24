@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatos</title>
+    <title>Contato</title>
 </head>
 <body>
+    <header>
+        <h1>Entre em Contato!</h1>
+    </header>
     <nav>
         <a href="index.html">Home</a>
         <a href="musica.html">Músicas para Programação</a>
@@ -13,6 +16,26 @@
         <a href="planos.html">Planos</a>
         <a href="contato.html">Contato</a>
     </nav>
-
+    <fieldset>
+        <legend><h2>Informações para Contato</h2></legend>
+        <label for="nome">Nome </label>
+        <input type="text" name="nome" id="nome" autofocus>
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <label for="turma">Turma: </label>
+        <select name="turma" id="turma">
+            <option value="" hidden></option>
+            <option value="t1">Turma 1</option>
+            <option value="t2">Turma 2</option>
+        </select>
+        <br><br>
+        <label for="msg">Mensagem: </label><br>
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </fieldset>
+    <footer>Isabelle Sayuri Isa - 2025</footer>
 </body>
 </html>
