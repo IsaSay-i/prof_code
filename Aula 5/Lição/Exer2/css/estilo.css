@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: Comic Sans MS;
+}
+
+figure{
+    background-color: #fff;
+    margin: 30px auto;
+    width: 330px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #000000e0;
+}
+
+figure img{
+    width: 330px;
+    border-radius: 20px 20px 0 0;
+}
+
+figcaption{
+    padding: 20px 15px 15px;
+}
+
+h1{
+    display: inline-block;
+}
+
+.dist{
+    display: inline-block;
+    margin: 0 0 0 55px;
+    vertical-align: top;
+    font-size: 1.15em;
+}
+
+.dist img{
+    width: 30px;
+    vertical-align: middle;
+}
+
+.estrelas img{
+    margin-top: 10px;
+    width: 120px;
+}
+
+h3{
+    margin: 20px 0;
+}
+
+.dias{
+    margin: 15px 0;
+    text-align: center;
+}
+
+.clock{
+    width: 30px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+hr{
+    margin-top: 20px;
+}
+
+.horario{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.horario li{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.reserva{
+    color: #b0c9e0;
+    font-size: 1.8em;
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 3px;
+}
+
+.reserva:hover{
+    transition: 0.3s;
+    color: #859db8;    
+    background-color: #e9e7e4;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.reserva:active{
+    color: #5f758d;
+    background-color: #d1cfcb;
+    transition: 0.1s;
+}

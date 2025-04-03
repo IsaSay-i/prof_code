@@ -1,0 +1,21 @@
+p{
+    width: 500px;
+    height: 100px;
+    background-color: khaki;
+}
+
+/* seletor individual */
+#caixinha{
+    border: 1px solid #000;
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+
+/* seletor classe */
+.sombra{
+    box-shadow: 10px 10px 10px #424242c5;
+}
+
+.borda2{
+    border: 2px dotted rgb(68, 35, 5)
+}

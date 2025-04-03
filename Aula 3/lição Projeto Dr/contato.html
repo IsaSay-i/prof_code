@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <h1>Dr. Robervando Paixão</h1>
+    </header>
+    <nav>
+        <a href="index.html">Página Inicial</a>
+        <a href="curriculo.html">Currículo</a>
+        <a href="especialidades.html">Especialidades</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <br><br>
+    <main>
+        <fieldset>
+            <legend><h2>Agendamento</h2></legend>
+            <p>Agende sua consulta. Por favor, indique sua preferência por dia e horário. Após checarmos a disponibilidade, entraremos em contato com você para a confirmação.</p>
+            <fieldset>
+                <br>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required autofocus>
+                <br><br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <br><br>
+                <label for="telefone">Telefone</label>
+                <input type="number" name="telefone" id="telefone">
+                <br><br>
+                <label for="cnst-preferencia">Consultório de preferência</label><br>
+                <select name="cnst-preferencia" id="cnst-preferencia" required>
+                    <option value="" hidden>Selecione 1 item</option>
+                    <option value="c1">Vitalis Saúde</option>
+                    <option value="c2">Equilíbrio Clínico</option>
+                    <option value="c3">MedPrime Consultas</option>
+                    <option value="c4">Vida & Cuidado</option>
+                </select>
+                <br><br>
+                <label for="data">Data da Consulta </label>
+                <input type="date" name="data" id="data">
+                <br><br>
+                <label for="como-chegou">Como chegou ao nosso site?</label><br>
+                <select name="como-chegou" id="como-chegou">
+                    <option value="" hidden>Selecione 1 item</option>
+                    <option value="s1">Propaganda na TV</option>
+                    <option value="s2">Panfleto</option>
+                    <option value="s3">Anúncio em vídeo</option>
+                    <option value="s4">Pessoas</option>
+                </select>
+                <br><br> 
+                <label for="msg">Mensagem:</label><br>
+                <textarea name="msg" id="m1" cols="30" rows="10"></textarea><br>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </fieldset>
+    </main>
+    <footer>Dr. Roberwando - 2025</footer>
+</body>
+</html>

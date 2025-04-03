@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../imagens/bg.jpg);
+}
+
+html, body{
+    min-height: 100%;
+    background-size: cover;
+}
+/* use para deixar o fundo fixado
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+   ou isso daqui
+    min-height: 100%;
+    background-size: cover;
+ */
+
+#formulario {
+    background-color: #ffffff8a;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem auto;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#formulario p {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1.25em;
+}
+
+.campo input[type="text"]{
+    width: 100%;
+    padding: 0.4rem;
+    margin-left: 0.5rem;
+    border: 1px solid #c9c9c9;
+    font-size: 0.8em;
+}
+
+a {
+    align-self: flex-end;
+    margin-bottom: 1rem;
+    color: rgb(194, 86, 15);
+}
+
+input[type="submit"]{
+    background-color: rgb(255, 102, 0);
+    border: 1px solid #00000083;
+    border-radius: 9px;
+    height: 60px;
+    font-size: 1.2em;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(207, 83, 1);
+}
+
+input[type="submit"]:active{
+    background-color: rgb(167, 53, 0);
+    color: #ffffff;
+}

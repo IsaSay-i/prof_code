@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.box {
+    border: 1px dashed #000;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.image {
+    text-align: center;
+    margin: 0;
+    width: 300px;
+}
+
+.texto {
+    border-left: 1px solid #000;
+    padding-left: 50px;
+    width: 600px;
+}
+
+.image, .texto {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+footer {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    padding: 8px;
+}
+
+footer h3 {
+    margin: 0;
+}

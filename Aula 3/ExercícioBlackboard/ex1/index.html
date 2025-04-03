@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados do Paciente</title>
+</head>
+
+<body>
+    <main>
+        <fieldset>
+            <legend><b>Dados do paciente</b></legend><br>
+            <label for="nome">Nome do Paciente: </label>
+            <input type="text" name="nome" id="nome" required autofocus>
+            <br><br>
+            <label for="reg-hospitalar">Registro Hospitalar: </label>
+            <input type="text" name="reg-hospitalar" id="reg-hospitalar" required>
+            <br><br>
+            <label for="dt-inclusao">Data de Inclusão: </label>
+            <input type="date" name="dt-inclusao" id="dt-inclusao">
+            <br><br>
+            <label for="dt-nascimento">Data de Nascimento: </label>
+            <input type="date" name="dt-nascimento" id="dt-nascimento">
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email">
+            <br><br>
+            <label for="genero">Gênero: </label><br>
+                <input type="radio" name="genero" id="fem" value="fem">
+                <label for="fem">Feminino</label><br>
+                <input type="radio" name="genero" id="masc" value="masc">
+                <label for="masc">Masculino</label>
+            <br><br>
+            <label for="raca">Raça Declarada: </label>
+            <select name="raca" id="raca">
+                <option value="" hidden>Selecione 1 opção</option>
+                <option value="branca">Branca</option>
+                <option value="negra">Negra</option>
+                <option value="parda">Parda</option>
+                <option value="amarela">Amarela</option>
+                <option value="indigena">Indígena</option>
+                <option value="desconhecida">Nenhuma das Opções</option>
+            </select>
+            <br><br>
+            <label for="ficou-sabendo">Como ficou sabendo do estudo?</label>
+            <select name="ficou-sabendo" id="ficou-sabendo">
+                <option value="" hidden>Selecione 1 opção</option>
+                <option value="convidado">Convidado</option>
+                <option value="internet">Internet</option>
+                <option value="amigos">Amigos</option>
+                <option value="familiares">Familiares</option>
+                <option value="outro">Outro</option>
+            </select>
+            <br><br>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </main>
+    <footer>Isabelle Sayuri Isa - 2025</footer>
+</body>
+
+</html>

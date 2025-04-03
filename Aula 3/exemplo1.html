@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Aula 3 - Formulários</h1>
+    </header>
+    <main>
+        <!-- get, post, put, delete, patch, trace, etc -->
+        <form action="" method="">
+            <fieldset>
+                <legend>Cadastro de Usuário</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required autofocus>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <br>
+                <label for="est-civil">Estado Civil:</label>
+                <br>
+                <input type="radio" name="est-civil" id="e1" value="solteiro">
+                <label for="e1">Solteiro</label>
+
+                <input type="radio" name="est-civil" id="e2" value="casado">
+                <label for="e2">Casado</label>
+
+                <input type="radio" name="est-civil" id="e3" value="divorciado">
+                <label for="e3">Divorciado</label>
+                <br>
+                <label for="cor-fvr">Cor(es) Favorita:</label><br>
+                <input type="checkbox" name="cor" id="c1" value="vermelho">
+                <label for="c1">Vermelho</label><br>
+
+                <input type="checkbox" name="cor" id="c2" value="azul">
+                <label for="c2">Azul</label><br>
+
+                <input type="checkbox" name="cor" id="c3" value="roxo">
+                <label for="c3">Roxo</label><br>
+
+                <input type="checkbox" name="cor" id="c4" value="amarelo">
+                <label for="c4">Amarelo</label>
+                <br>
+                <label for="cidade">Cidade:</label><br>
+                <select name="cid" id="cid">
+                    <option value="" hidden>Selecione 1 item</option>
+                    <option value="cid1">São Paulo</option>
+                    <option value="cid2">Itaquaquecetuba</option>
+                    <option value="cid3">Santo André</option>
+                    <option value="cid4">Paranapiacaba</option>
+                </select>
+                <br>
+                <label for="assunto">Assunto: </label><br>
+                <textarea name="assunto" id="a1" cols="40" rows="5"></textarea>
+                <br>
+                <button>Salvar</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
