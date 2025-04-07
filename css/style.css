@@ -51,7 +51,7 @@ h2{
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, max-content));
-    gap: 7vw;
+    gap: clamp(50px, 7vw, 9vw);
     width: 75vw;
     max-width: 1250px;
     margin: 60px auto;
@@ -141,19 +141,87 @@ section:hover .image-wrapper img {
     transform: scale(1.2); 
 }
 
-ul{
-    background-color: #fff;
-    width: 100%;
+.image-container > ul {
+    background-color: #aaaaaa;
+    width: auto;
     height: 252px;
-    padding: 10px 1.5em 0;
+    padding: 10px 0 0 1.5em;
     font-size: 1.1em;
     font-family: Fredoka;
     scroll-behavior: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-color: #bdbcbc #474747 ;
+}
+section:hover .image-container > ul {
+    background-color: #ffffff;
+    scrollbar-color: auto;
+}
+
+/* A seguir um código q o ChatGPT passou para o scrol no chrome/ web-kit..? Talvez eu tire isso */
+.image-container > ul::-webkit-scrollbar {   /* Scrollbar padrão (fora do hover) */
+    width: 8px;
+}
+.image-container > ul::-webkit-scrollbar-track {
+    background: #474747;
+}
+.image-container > ul::-webkit-scrollbar-thumb {
+    background-color: #bdbcbc;
+    border-radius: 10px;
+}
+
+section:hover .image-container > ul::-webkit-scrollbar-track {  /* Scrollbar durante o hover */
+    background: #e0e0e0;
+}
+section:hover .image-container > ul::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+.sub-list {
+    position: relative;
+    cursor: pointer;
+}
+
+.fa-chevron-up{
+    font-size: 0.8em;
+}
+
+.sub-list .fa-chevron-up {
+    position: absolute;
+    right: 13px;
+    top: 0.35em;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+    color: black;
+}
+
+.sub-list.open .fa-chevron-up {
+    transform: rotate(180deg);
+}
+
+.sub-list-ul{
+    height: auto;
+    padding: 0 1.5em;
+    border-left: 1px solid #707070;
+    font-size: 0.9em;
+}
+
+.sub-list.open .sub-list-ul {
+    display: block;
+}
+
+li{
+    margin-bottom: 5px;
 }
 
 li a{
-    color: #df4600;
+    color: #7c0568;
 }
 li a:visited{
-    color: purple;
+    color: #071652;
+}
+.sub-list-li{
+    margin: 7px;
+    color: #0ab89b;
+    list-style: disc;
 }
