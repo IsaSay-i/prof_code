@@ -72,7 +72,7 @@ section:hover{
 }
 
 figcaption{
-    background-color: #536d68;;
+    background-color: #77a89e;;
     color: #050b49;
     /* #73ffe8;  */
     width: 100%;
@@ -80,7 +80,7 @@ figcaption{
     text-align: center;
     font-size: 1.6em;
     font-weight: bold;
-    font-family: Quicksand;
+    font-family: Fredoka;
 }
 section:hover figcaption{
     background-color: #bef3e6; 
@@ -188,8 +188,8 @@ section:hover .image-container > ul::-webkit-scrollbar-thumb {
 
 .sub-list .fa-chevron-up {
     position: absolute;
-    right: 13px;
-    top: 0.35em;
+    right: 18px;
+    top: 0.5em;
     transform: rotate(90deg);
     transition: transform 0.3s ease;
     color: black;
@@ -201,7 +201,7 @@ section:hover .image-container > ul::-webkit-scrollbar-thumb {
 
 .sub-list-ul{
     height: auto;
-    padding: 0 1.5em;
+    padding: 0 1em;
     border-left: 1px solid #707070;
     font-size: 0.9em;
 }
@@ -222,6 +222,5 @@ li a:visited{
 }
 .sub-list-li{
     margin: 7px;
-    color: #0ab89b;
     list-style: disc;
 }
