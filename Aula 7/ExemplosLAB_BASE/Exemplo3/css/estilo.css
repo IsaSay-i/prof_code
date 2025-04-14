@@ -11,7 +11,7 @@ body{
 
 #headerBlack{
 	font-family: Shojumaru;
-	background:-gradient(#000, #cecece);
+	background: linear-gradient(#000, #cecece);
 	color: #fff;
 	height: 70px;
 	width: 100%;
@@ -20,7 +20,7 @@ body{
 }
 
 #headerBlue{
-	background:-gradient(#1c1cd1, #00000f);
+	background: linear-gradient(#1c1cd1, #00000f);
 	width: 100%;
 	height: 150px;
 	color: #fff;

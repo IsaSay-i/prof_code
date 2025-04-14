@@ -20,9 +20,8 @@ header{
     position: fixed;
     box-sizing: border-box;
     display: flex;
-    padding: clamp(10px, 1.5vh, 40px);
-    text-align: center;
-    justify-content: center;
+    padding: clamp(10px, 1.8vh, 40px);
+    padding-left: 4vw;
     align-items: center;
     background-color: #180052;
     /* cores pra isso #89F5FD  */
@@ -34,11 +33,11 @@ header.shadow {
 
 .logo {
     height: 2.8em;
-    margin-right: 10px;
+    margin-right: 15px;
   }
 
 main{
-    padding-top: clamp(65px, 8vh, 110px)
+    padding-top: clamp(65px, 8.5vh, 110px);
 }
 
 h2{
@@ -144,8 +143,7 @@ section:hover .image-wrapper img {
 .image-container > ul {
     background-color: #aaaaaa;
     width: auto;
-    height: 252px;
-    padding: 10px 0 0 1.5em;
+    height: 261px;
     font-size: 1.1em;
     font-family: Fredoka;
     scroll-behavior: auto;
@@ -182,17 +180,26 @@ section:hover .image-container > ul::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
+.sub-list-p{
+    display: inline-block;
+}
+.sub-list-p:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
 .fa-chevron-up{
     font-size: 0.8em;
 }
 
 .sub-list .fa-chevron-up {
     position: absolute;
-    right: 18px;
-    top: 0.5em;
+    right: 5px;
+    top: 0.39em;
     transform: rotate(90deg);
     transition: transform 0.3s ease;
     color: black;
+    z-index: 10;
 }
 
 .sub-list.open .fa-chevron-up {
@@ -201,7 +208,6 @@ section:hover .image-container > ul::-webkit-scrollbar-thumb {
 
 .sub-list-ul{
     height: auto;
-    padding: 0 1em;
     border-left: 1px solid #707070;
     font-size: 0.9em;
 }
@@ -211,16 +217,29 @@ section:hover .image-container > ul::-webkit-scrollbar-thumb {
 }
 
 li{
-    margin-bottom: 5px;
+    padding: 0 1em;
+    margin: 5px 0;
+    list-style: disc; 
 }
 
 li a{
     color: #7c0568;
+    text-decoration: none;
+}
+li a:hover{
+    text-decoration: underline;
 }
 li a:visited{
     color: #071652;
 }
+
 .sub-list-li{
-    margin: 7px;
+    margin: 7px 10px 7px 5px;
+    padding-left: 5px;
     list-style: disc;
+    list-style-position: inside;
+    border-radius: 5px;
+}
+.sub-list-li:hover{
+    background-color: #dfdfdf;
 }

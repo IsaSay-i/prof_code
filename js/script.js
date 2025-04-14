@@ -2,7 +2,7 @@ document.querySelectorAll('.sub-list').forEach(item => {
     item.addEventListener('click', () => {
         item.classList.toggle('open');
 
-        const subList = item.querySelector('.sub-list-ul');
+        const subList = item.nextElementSibling;
         const icon = item.querySelector('.fa-chevron-up');
 
         if (subList) {
