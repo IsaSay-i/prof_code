@@ -15,18 +15,25 @@ header{
     background: linear-gradient(#0e6dfcbd, #012ec5bd, #020329cb);
     padding: 10px 40px;
     font-size: 1.2em;
-    color: #fff;
     margin-bottom: 50px;
 }
 
-h1{
-    text-shadow: 3px 4px 0 #000;
+header > h1{
+    padding-left: 1em;
+    font-size: 2.2em;
+    text-shadow: 1px 1px 3px #000;
+    color: #e9e9e9;
+}
+
+header > h1 > span{
+    font-size: 0.95em;
+    margin-left: 0.5em;
+    color: #fff;
 }
 
 main{
     margin: auto;
     width: 760px;
-    display: block;
     text-align: center;
 }
 
@@ -40,14 +47,18 @@ figure{
     transition: transform 0.5s ease;
     perspective: 600;
     position: relative;
+    cursor: pointer;
 }
 figure:hover{
-    box-shadow: #000000c4 0px 3px 10px 3px;
+    box-shadow: #00000065 0px 3px 10px 3px;
     transition: transform 0.3s ease;
     transform: scale(1.01);
 }
-.card:active img{
-    display: none;
+figure:active {
+    box-shadow: none;
+}
+
+.card:active {
     transform: rotateY(180deg);
 }
 
@@ -55,7 +66,7 @@ figure:hover{
     height: 100%;
     position: absolute;
     transform-style: preserve-3d;
-    transition: all 1s ease-in-out;
+    transition: all 0.7s ease-in-out;
     width: 100%;
 }
 
@@ -69,11 +80,13 @@ img {
 }
 
 figcaption{
-    height: 136px;
+    height: 116px;
     color:rgb(0, 132, 255);
+    background-color: #e9ffff;
     text-align: center;
     margin: auto;
     padding-top: 30px;
+    border-radius: 10px;
     border: 2px dashed #5c5c5c;
     transform: rotateY(180deg)
 }
@@ -83,6 +96,7 @@ footer{
     color: #fff;
     margin-top: 50px;
     padding: 20px;
+    padding-left: 50px;
 }
 
 /* @keyframes sombrinha{
