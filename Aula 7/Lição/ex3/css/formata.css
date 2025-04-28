@@ -13,8 +13,8 @@ body{
 
 main{
     margin: auto;
-    width: 1200px;
-    height: 700px;
+    width: 960px;
+    height: 1000px;
 }
 
 header{
@@ -38,7 +38,7 @@ header > h1 > span{
 }
 
 aside{
-    width: 300px;
+    width: 150px;
     height: 400px;
     text-align: center;
     border: 1px solid #000;
@@ -47,7 +47,15 @@ aside{
 }
 
 .opcoes{
-    
+    margin: auto;
+    float: right;
+}
+
+.opcoes > section{
+    width: 500px;
+    height: 200px;
+    border: 1px solid #000;
+    margin-bottom: 10px;
 }
 
 main > section{
@@ -55,6 +63,7 @@ main > section{
     margin: 70px 0 0;
     border: 1px solid #000;
     text-align: center;
+    clear: both;
 }
 
 footer{
