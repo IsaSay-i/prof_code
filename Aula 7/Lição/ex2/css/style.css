@@ -24,8 +24,23 @@ header > h1{
 header > h1 > span{
     font-size: 0.95em;
     margin-left: 0.5em;
+}
+
+a{
+    text-decoration: none;
     color: #fff;
 }
+
+a:nth-child(1){
+    font-size: 0.9em;
+    color: #e9e9e9;
+}
+
+a:nth-child(3){
+    font-size: 0.9em;
+    color: #e9e9e9;
+}
+
 
 /** CSS3 Gallery Example by (C) Andrea Giammarchi for Ajaxian */
 html, body, ul.thumb, ul.thumb li {
@@ -96,17 +111,17 @@ ul.thumb li img {
 ul.thumb li:nth-child(1) {
     margin-top: -130px;
     margin-left: -160px;
-    -moz-transform: rotate(30deg);
-    -webkit-transform: rotate(30deg);
-    transform: rotate(30deg);
-    -webkit-filter: blur(5px);
+    -moz-transform: rotate(-700deg);
+    -webkit-transform: rotate(-700deg);
+    transform: rotate(-700deg);
+    -webkit-filter: blur(2px);
 }
 ul.thumb li:nth-child(2) {
     margin-top: -120px;
     margin-left: -10px;
-    -moz-transform: rotate(19deg);
-    -webkit-transform: rotate(19deg);
-    transform: rotate(19deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(-180deg);
     -webkit-filter: blur(4px);
 }
 ul.thumb li:nth-child(3) {
@@ -128,9 +143,9 @@ ul.thumb li:nth-child(4) {
 ul.thumb li:nth-child(5) {
     margin-top: 20px;
     margin-left: 30px;
-    -moz-transform: rotate(-20deg);
-    -webkit-transform: rotate(-20deg);
-    transform: rotate(-20deg);
+    -moz-transform: rotate(1420deg);
+    -webkit-transform: rotate(1420deg);
+    transform: rotate(1420deg);
     -webkit-filter: blur(1px);
 }
 ul.thumb li:nth-child(6) {
@@ -139,7 +154,7 @@ ul.thumb li:nth-child(6) {
     -moz-transform: rotate(-30deg);
     -webkit-transform: rotate(-30deg);
     transform: rotate(-30deg);
-    -webkit-filter: blur(6px);
+    -webkit-filter: blur(3px);
 }
 ul.thumb li:nth-child(7) {
     margin-top: -290px;
@@ -148,30 +163,33 @@ ul.thumb li:nth-child(7) {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     -webkit-filter: blur(2px);
+    animation: pendulo-reverse 2.7s ease-in-out forwards;
+    transition: all 3s ease;
 }
 ul.thumb li:nth-child(8) {
-    margin-top: -270px;
-    margin-left: 130px;
-    -moz-transform: rotate(30deg);
-    -webkit-transform: rotate(30deg);
-    transform: rotate(30deg);
+    margin-top: -230px;
+    margin-left: 90px;
+    -moz-transform: rotate(-340deg);
+    -webkit-transform: rotate(-340deg);
+    transform: rotate(-340deg);
     -webkit-filter: blur(6px);
 }
 ul.thumb li:nth-child(9) {
-    margin-top: -90px;
-    margin-left: 170px;
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    margin-top: -120px;
+    margin-left: 100px;
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
     -webkit-filter: blur(2px);
+    transition-duration: 6s;
 }
 ul.thumb li:nth-child(10) {
-    margin-top: -20px;
-    margin-left: -330px;
-    -moz-transform: rotate(10deg);
-    -webkit-transform: rotate(10deg);
-    transform: rotate(10deg);
-    -webkit-filter: blur(3px);
+    margin-top: -80px;
+    margin-left: -290px;
+    -moz-transform: rotate(-320deg);
+    -webkit-transform: rotate(-320deg);
+    transform: rotate(-320deg);
+    -webkit-filter: blur(2px);
 }
 
 /* here is how the LI element should look
@@ -184,7 +202,7 @@ ul.thumb li:hover{
     width: 480px;
     height: 322px;
     /* put the LI in the center (almost due to bottom padding) */
-    margin-top: -151px;
+    margin-top: -211px;
     margin-left: -240px;
     /* the effect is a "zoom" one, the shadow will be bigger */
     -moz-box-shadow:8px 8px 24px #111;
@@ -195,6 +213,37 @@ ul.thumb li:hover{
     -webkit-transform: rotate(0deg);
     -webkit-filter: blur(0px);
     transform: rotate(0deg);
+}
+
+ul.thumb li:nth-child(7):hover{
+    transition: all 3s ease;
+    animation: pendulo 2.7s ease-in-out forwards;
+    transform: rotate(0deg) scale(1.2);
+}
+
+@keyframes pendulo {
+    0%   { transform: rotate(0deg) scale(1); }
+    20%  { transform: rotate(-15deg) scale(1.1); }
+    40%  { transform: rotate(30deg) scale(1.2); }
+    60%  { transform: rotate(-30deg) scale(1.2); }
+    80%  { transform: rotate(20deg) scale(1.2); }
+    90%  { transform: rotate(-10deg) scale(1.2); }
+    100% { transform: rotate(0deg) scale(1.2); }
+}
+
+@keyframes pendulo-reverse {
+    0%   { transform: rotate(0deg) scale(1.2); }
+    20%  { transform: rotate(15deg) scale(1.2); }
+    40%  { transform: rotate(-30deg) scale(1.2); }
+    60%  { transform: rotate(30deg) scale(1.2); }
+    80%  { transform: rotate(-20deg) scale(1.2); }
+    90%  { transform: rotate(10deg) scale(1.1); }
+    100% { transform: rotate(0deg) scale(1); }
+}
+
+ul.thumb li:nth-child(9):hover{
+    transition: all 2.5s ease-in-out;
+    transform: rotate(0deg) scale(1.5);
 }
 /* just some credit fixed on the bottom of the page ... */
 div.copyright {

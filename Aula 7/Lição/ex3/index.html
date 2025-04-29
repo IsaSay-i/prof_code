@@ -7,7 +7,13 @@
 </head>
 <body>
     <header>
-        <h1>Exercício 3 - <span>Operadoras de Internet</span></h1>
+        <h1>Exercício 3 -
+            <span>
+                <a href="../ex1/index.html">Galeria de Fotos</a>
+                <a href="../ex2/index.html">- Imagens Espalhadas</a>
+                <a href="../ex3/index.html">- Formulário</a>
+            </span>
+        </h1>
     </header>
     <main>
         <aside>
@@ -15,7 +21,7 @@
         </aside>
         <article class="opcoes">
             <section>
-                <img src="" alt="">
+                <img src="imagens/claroP.png" alt="">
                 <h3>Pré Pago</h3>
                 <p>Ganhe benefecios fazendo agora sua recarga para seu Claropré. Venha conhecer nossos planos e aproveite cada segundo da sua vida, sem deixar nada para depois.</p>
                 <h3>Valores das recargas:</h3>
@@ -27,7 +33,7 @@
                 </ul>
             </section>
             <section>
-                <img src="" alt="">
+                <img src="imagens/oiP.png" alt="">
                 <h3>Pós-pago</h3>
                 <p>A Oi agora é muito mais. Fixo, Móvel, banda larga, internet, TV, orelhão, DDD, DDI e negócios. SEU PÓS COM O MELHOR DO 4G.</p>
                 <h3>Valores dos planos</h3>
@@ -41,11 +47,16 @@
         </article>
         <section>
             <h3>Escolha o seu:</h3>
-            <input type="checkbox" name="pro-pago" id="proPago" value="proPago">Pró Pago
-            <input type="checkbox" name="pos-pago" id="posPago" value="posPago">Pós Pago
-            <button type="submit"></button>
-        <section>
+            <section class="escolher-planos">
+                <input type="radio" name="opcao" id="proPago" value="proPago">
+                <label for="proPago">Pró pago</label>
+    
+                <input type="radio" name="opcao" id="posPago" value="posPago">
+                <label for="posPago">Pós pago</label>
+            </section>
+            <button type="submit">Enviar</button>
+        </section>
+            <footer>Isabelle Sayuri Isa - RGM: 42801591</footer>
     </main>
-    <footer>Isabelle Sayuri Isa - 2025</footer>
 </body>
 </html>
