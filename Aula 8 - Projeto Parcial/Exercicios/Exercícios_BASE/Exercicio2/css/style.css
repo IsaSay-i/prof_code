@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-image: url('../img/background.png');
+}
+
+main{
+    width: 960px;
+    height: 100%;
+    margin: auto;
+}
+
+#logo a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header section{
+    padding: 40px;
+}
+
+header h1 a{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-stretch: narrower;
+}
+
+span {
+    color: green;
+}
+
+header h2{
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+nav{
+    background-color: #85868a;
+    height: 70px;
+    display: block;
+    border-bottom: #d1d1d1 solid 3px;
+}
+
+nav a{
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.selected{
+    background-color: green;
+}
+
+#site_content{
+    padding: 20px 40px 40px;
+    height: 600px;
+    background-color: #ffffff59;
+}
+
+#content{
+    float: left;
+    width: 600px;
+    height: auto;
+}
+
+#content h1{
+    color: green;
+    font-size: 1.7em;
+    font-weight: 100;
+    margin: 20px 0;
+}
+
+#content p{
+    color:#868686;
+    margin-bottom: 30px;
+    font-size: 0.9em;
+}
+
+.sidebar section{
+    border: 1px solid #acacacbb;
+    border-radius: 20px;
+    float: right;
+    width: 200px;
+    padding: 10px 10px 0;
+    margin-bottom: 10px;
+}
+
+.sidebar section h4{
+    color: green;
+    font-weight: 500;
+}
+
+section h3{
+    color: green;
+    font-size: 1.7em;
+    font-weight: 100;
+    margin: 20px 0;
+}
+
+section p{
+    margin: 15px 0 35px;
+}
+
+.sidebar section ul{
+    margin: 30px 20px;
+}
+.sidebar section li{
+    list-style-image: url('../img/link.png');
+    margin: 10px 20px 0;
+}
+
+.sidebar section a{
+    text-decoration: none;
+}
+
+footer{
+    width: 960px;
+    float: clear;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #868686;
+    color: #fff;
+}

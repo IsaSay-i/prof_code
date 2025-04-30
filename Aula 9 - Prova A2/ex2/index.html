@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <figure>
+            <img src="img/imagemE.jpg" alt="">
+        </figure>
+        <article>
+            <h1>Novo Registro</h1>
+            <form action="cadastrar.php" method="POST">
+                <label for="nome">Nome Completo: </label>
+                <input type="text" name="nome" id="nome">
+    
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email">
+    
+                <label for="senha">Senha: </label>
+                <input type="password" name="senha" id="senha">
+    
+                <label for="confirmar-senha">Confirmar senha: </label>
+                <input type="password" name="confirmar-senha" id="confirmarSenha">
+                
+                <div class="confirmar-container">
+                    <input type="checkbox" name="confirmar" id="confirmar">Eu li e concordo com os termos de serviço
+                </div>
+                
+                <button type="submit">Registrar</button>
+            </form>
+        </article>
+    </main>
+</body>
+</html>

@@ -65,13 +65,14 @@ section{
     overflow: hidden;
     box-shadow: 0 6px 12px #00000066;
     transition: transform 0.2s ease;
+    position: relative;
 }
 section:hover{
     transform: scale(1.1);
 }
 
 figcaption{
-    background-color: #77a89e;;
+    background-color: #77a89e;
     color: #050b49;
     /* #73ffe8;  */
     width: 100%;
@@ -85,10 +86,20 @@ section:hover figcaption{
     background-color: #bef3e6; 
 }
 
+.valeuA2 figcaption{
+    color: #521a00;
+    background-color: #a88f77;
+}
+.valeuA2:hover figcaption{
+    color: #8b2c00;
+    background-color: #ffe1b3; 
+}
+
 .image-container {
     position: relative;
     width: 100%;
     height: 261px;
+    overflow: hidden;
 }
 
 .overlay {
@@ -102,7 +113,7 @@ section:hover figcaption{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    z-index: 2;
+    z-index: 5;
 }
 
 .simbolo{
@@ -127,18 +138,109 @@ section:hover figcaption{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
 }
 
-.image-wrapper img{
-    min-height: 175px;
+section:hover .image-wrapper img{
+    transform: scale(1.2); 
+}
+
+.top-image, .bottom-image {
+    position: absolute;
+    min-height: 87.5px;
     width: 95%;
     object-fit: cover;
     transition: transform 0.3s ease;
+    background-size: 100% 200%; 
+    transform-origin: center center;
+}
+
+.top-image {
+    top: 43px;
+    background-position: top;
+    transition: transform 0.3s ease;
+}
+
+.bottom-image {
+    bottom: 43px;
+    background-position: bottom; 
+    transition: transform 0.3s ease;
+}
+
+.image-wrapper div {
     z-index: 1;
 }
-section:hover .image-wrapper img {
-    transform: scale(1.2); 
+
+.animar .top-image {
+    animation: abrirTopo 1s ease forwards;
 }
+.animar .bottom-image {
+    animation: abrirBaixo 1s ease forwards;
+}
+
+@keyframes abrirTopo {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+@keyframes abrirBaixo {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(50%);
+    }
+}
+
+
+section:hover .top-image {
+    transform: scale(1.2) translateY(-8%);  /* Imagem de cima amplia e sobe */
+}
+section:hover .bottom-image {
+    transform: scale(1.2) translateY(8%);   /* Imagem de baixo amplia e desce */
+}
+
+section:hover .top-image, section:hover .bottom-image {
+    transition: transform 0.3s ease-out;
+}
+
+/* Imagens de fundo */
+section:nth-child(1) .top-image, section:nth-child(1) .bottom-image {
+    background-image: url('../img/aula2.jpg');
+}
+
+section:nth-child(2) .top-image, section:nth-child(2) .bottom-image {
+    background-image: url('../img/aula2.jpg');
+}
+
+section:nth-child(3) .top-image, section:nth-child(3) .bottom-image {
+    background-image: url('../img/aula2.jpg');
+}
+
+section:nth-child(4) .top-image, section:nth-child(4) .bottom-image {
+    background-image: url('../img/aula2.jpg');
+}
+
+section:nth-child(5) .top-image, section:nth-child(5) .bottom-image {
+    background-image: url('../img/aula2.jpg');
+}
+section:nth-child(6) .top-image, section:nth-child(6) .bottom-image {
+    background-image: url('../img/aula2.jpg');
+}
+section:nth-child(7) .top-image, section:nth-child(7) .bottom-image {
+    background-image: url('../img/aula2.jpg');
+}
+section:nth-child(8) .top-image, section:nth-child(8) .bottom-image {
+    background-image: url('../img/aula2.jpg');
+}
+
+/* Fim imagens de fundo */
+
 
 .image-container > ul {
     background-color: #aaaaaa;
@@ -181,7 +283,15 @@ section:hover .image-container > ul::-webkit-scrollbar-thumb {
     font-size: 0.4em;
     position: absolute;
     top: 1.3em;
-    right: 91.5%;
+    right: 92%;
+}
+
+.fa-folder, .fa-folder-open{  
+    display: inline-block;
+    font-size: 1em;
+    position: absolute;
+    top: 0.2em;
+    right: 90.5%;
 }
 
 li{
@@ -269,7 +379,7 @@ li a:visited{
 }
 
 footer{
-    background-color: #000;
+    background: linear-gradient(#030013, #02000c);
     color: #fff;
     padding: 30px 40px 20px;
     display: flex;
