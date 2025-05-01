@@ -26,6 +26,7 @@ header{
     background-color: #180052;
     /* cores pra isso #89F5FD  */
     color: #fff;
+    z-index: 10;
 }
 header.shadow {
     box-shadow: 0 4px 8px #0000004d;
