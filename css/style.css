@@ -6,8 +6,8 @@
 
 body{
     font-family: Helvetica;
-    background-color: #030024;
-    /* background-color: #f7f6ff #20065c #08022c #0d0441 #070335 #110f27; */
+    background-color: #150e2c;
+    overflow-x: hidden;
 }
 
 .hidden{
@@ -23,10 +23,11 @@ header{
     padding: clamp(10px, 1.8vh, 40px);
     padding-left: 6vw;
     align-items: center;
-    background-color: #180052;
-    /* cores pra isso #89F5FD  */
+    background-color: #0f072b;
+    /* #180052;  */
     color: #fff;
     z-index: 10;
+    box-shadow: 0 0 20px #0000003d;
 }
 header.shadow {
     box-shadow: 0 4px 8px #0000004d;
@@ -41,10 +42,13 @@ main{
     padding-top: clamp(65px, 8.5vh, 110px);
 }
 
-h2{
+main > h2{
     width: 100%;
-    background-color: #fff;
+    padding: clamp(6px, 0.6vh, 10px);
+    font-size: 1.45em;
+    background-color: #2e1a5a;
     text-align: center;
+    box-shadow: 0 0 20px #0000003b;
 }
 
 
@@ -64,7 +68,7 @@ section{
     width: 260px;
     border-radius: 30px;
     overflow: hidden;
-    box-shadow: 0 6px 12px #00000066;
+    box-shadow: #000000 0px 8px 16px -8px;
     transition: transform 0.2s ease;
     position: relative;
 }
@@ -73,7 +77,7 @@ section:hover{
 }
 
 figcaption{
-    background-color: #77a89e;
+    background-color: #778ea8;
     color: #050b49;
     /* #73ffe8;  */
     width: 100%;
@@ -84,7 +88,7 @@ figcaption{
     font-family: Fredoka;
 }
 section:hover figcaption{
-    background-color: #bef3e6; 
+    background-color: #cadefd; 
 }
 
 .valeuA2 figcaption{
