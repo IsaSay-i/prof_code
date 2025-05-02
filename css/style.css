@@ -81,11 +81,12 @@ figcaption{
     color: #050b49;
     /* #73ffe8;  */
     width: 100%;
-    padding: 2.5px 0;
     text-align: center;
     font-size: 1.6em;
-    font-weight: bold;
-    font-family: Fredoka;
+    font-weight: 770;
+    font-family: Nunito Sans;
+    padding: 2.5px 0;
+    line-height: 1.1em;
 }
 section:hover figcaption{
     background-color: #cadefd; 
