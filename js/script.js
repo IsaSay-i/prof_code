@@ -24,45 +24,54 @@ document.querySelectorAll('.sub-list').forEach(item => {
 
 document.querySelectorAll('.image-content').forEach(imageContent => {
     imageContent.addEventListener('click', (e) => {
-        e.stopPropagation(); // Para evitar que o clique se propague para o documento
+        e.stopPropagation();
 
         const section = imageContent.closest('section');
         const ul = section.querySelector('ul');
-        const overlay = section.querySelector('.overlay'); // Encontra o overlay
+        const overlay = section.querySelector('.overlay');
         const imageWrapper = section.querySelector('.image-wrapper');
         const topImage = section.querySelector('.top-image');
         const bottomImage = section.querySelector('.bottom-image');
+        const simboloContainer = section.querySelector('.simbolo-container')
 
-        // Remover a sombra (overlay)
-        if (overlay) {
-            overlay.style.zIndex = '4'; // Garante que o overlay esteja acima
-            overlay.style.display = 'flex'; // Exibe o overlay
+        if (simboloContainer){
+            simboloContainer.classList.add('hidden');
         }
 
-        // Ativar a animação
+        if (ul) {
+            ul.classList.remove('hidden');
+            ul.style.zIndex = '1';
+        }
+
+        if (overlay) {
+            overlay.style.zIndex = '2';
+            overlay.style.display = 'flex';
+        }
+
         section.classList.add('animar');
 
-        // Mostrar o <ul> enquanto a animação ocorre, com a imagem acima
         setTimeout(() => {
-            if (ul) {
-                ul.classList.remove('hidden'); // Mostra o <ul>
-                ul.style.zIndex = '5'; // Garante que o <ul> fique acima
+            if (overlay) {
+                overlay.style.zIndex = '2';
             }
+
             if (imageWrapper) {
-                imageWrapper.style.zIndex = '1'; // Garante que a imagem de fundo seja visível
+                imageWrapper.style.zIndex = '1';
             }
+
             if (topImage && bottomImage) {
-                topImage.style.zIndex = '0'; // Coloca a imagem acima da lista
+                topImage.style.zIndex = '0';
                 bottomImage.style.zIndex = '0';
             }
-            imageContent.style.display = 'none'; // Esconde o content da imagem
-        }, 1000); // Inicia o processo logo após a animação (300ms para suavizar)
 
+            imageContent.style.display = 'none';
+        }, 1000);
     });
 });
 
+
 document.addEventListener('click', (e) => {
-    const isInsideCard = e.target.closest('.image-container'); // Verifica se o clique foi dentro de um card
+    const isInsideCard = e.target.closest('.image-container');
 
     if (!isInsideCard) {
         document.querySelectorAll('.image-container').forEach(container => {
@@ -73,31 +82,34 @@ document.addEventListener('click', (e) => {
             const imageWrapper = section.querySelector('.image-wrapper');
             const topImage = section.querySelector('.top-image');
             const bottomImage = section.querySelector('.bottom-image');
+            const simboloContainer = section.querySelector('.simbolo-container')
 
             if (imageContent && ul) {
-                // Esconde a lista
                 ul.classList.add('hidden');
-                ul.style.zIndex = ''; // Reseta o z-index do <ul>
-                imageContent.style.display = 'flex';
+                ul.style.zIndex = ''; 
+                imageContent.style.display = 'flex'; 
 
-                // Restaura o overlay e as imagens
                 if (overlay) {
-                    overlay.style.zIndex = ''; // Restaura o z-index do overlay
-                    overlay.style.display = 'flex'; // Restaura o overlay
+                    overlay.style.zIndex = '';
+                    overlay.style.display = 'flex'; 
                 }
 
                 if (imageWrapper) {
-                    imageWrapper.style.zIndex = '3'; // Restaura o z-index do image-wrapper
-                }
+                    imageWrapper.style.zIndex = '3'; 
 
                 if (topImage && bottomImage) {
-                    topImage.style.zIndex = '1'; // Restaura a posição das imagens
+                    topImage.style.zIndex = '1';
                     bottomImage.style.zIndex = '1';
+                }
+
+                if (simboloContainer){
+                    simboloContainer.classList.remove('hidden');
                 }
 
                 // Remove animação caso tenha sido ativada
                 section.classList.remove('animar');
             }
-        });
+
+        }});
     }
 });
