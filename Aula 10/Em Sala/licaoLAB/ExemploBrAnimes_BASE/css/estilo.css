@@ -1,0 +1,163 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header nav, .destaque > h3,
+main > h1 { 
+    font-family: Helvetica;
+}
+
+.container{
+    width: 960px;
+    margin: auto;
+}
+
+header{
+    background-color: #000;
+    color: #fff;
+}
+
+header .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header section, header nav{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+#direita{
+    flex-grow: 1;
+}
+
+#direita section{
+    letter-spacing: 5px;
+    font-size: 14pt;
+    font-style: italic;
+}
+
+#logo{
+    width: 250px;
+}
+
+#logo img{
+    width: 100%;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+main{
+    width: 960px;
+    margin: auto;
+    min-height: 400px;
+}
+
+main h1{
+    text-align: center;
+}
+
+.texto_banner{
+    font-size: 30pt;
+    text-align: center;
+    margin: 20px 0;;
+}
+
+#assistir, #assinar{
+    text-decoration: none;
+    display: block;
+    font-size: 18pt;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#assistir{
+    background-color: #30dce2;
+}
+
+#assinar{
+    background-color: rgb(252, 201, 60);
+}
+
+.destaque{
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00000060;
+}
+
+.destaque div{
+    display: flex;
+}
+
+.destaque figure img{
+    width: 150px;
+}
+
+#galeria{
+    margin: auto;
+    width: 770px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#galeria img:nth-last-child(2) {
+    margin: 0 auto;
+    margin-right: 0; 
+}
+#galeria img:nth-last-child(1) {
+    margin: 0 auto;
+    margin-left: 0;  
+}
+
+#galeria img{
+    width: 250px;
+    height: 370px;
+    object-fit: cover;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+footer nav a{
+    color: #ccc;
+    padding: 10px;
+    text-decoration: none;
+}

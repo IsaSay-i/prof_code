@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#linha {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #cacaca;
+}
+
+#a {
+    background-color: red;
+    height: 200px;
+}
+
+#b {
+    background-color: white;
+    height: 300px;
+}
+
+#c {
+    background-color: olivedrab;
+    height: 400px;
+}

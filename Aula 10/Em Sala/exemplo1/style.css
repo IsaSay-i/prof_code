@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+#linha{
+    background-color: rgb(194, 194, 194);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#a {
+    background-color: red;
+    height: 200px;
+}
+
+#b {
+    background-color: white;
+    height: 300px;
+}
+
+#c {
+    background-color: olivedrab;
+    height: 400px;
+}
+
+#a, #c {
+    flex-grow: 1;
+}
+
+#b {
+    flex-grow: 2;
+}
