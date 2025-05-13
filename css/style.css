@@ -196,20 +196,26 @@ section:hover .image-wrapper img{
     transition: transform 0.3s ease;
 }
 
+/* Para todos os cards que usarem 1 imagem concatenada de fundo */
 section:nth-child(3) .top-image, section:nth-child(3) .bottom-image,
-section:nth-child(9) .top-image, section:nth-child(9) .bottom-image { height: 87.5px; width: 95%; }
+section:nth-child(9) .top-image, section:nth-child(9) .bottom-image,
+section:nth-child(10) .top-image, section:nth-child(10) .bottom-image { height: 87.5px; width: 95%; }
 
 section:nth-child(3) .top-image,
-section:nth-child(9) .top-image { top: 43px; }
+section:nth-child(9) .top-image,
+section:nth-child(10) .top-image { top: 43px; }
 
 section:nth-child(3) .bottom-image,
-section:nth-child(9) .bottom-image { bottom: 43px;}
+section:nth-child(9) .bottom-image,
+section:nth-child(10) .bottom-image { bottom: 43px;}
 
 section:nth-child(3).animar .top-image,
-section:nth-child(9).animar .top-image { top: 0; width: 100%; }
+section:nth-child(9).animar .top-image,
+section:nth-child(10).animar .top-image { top: 0; width: 100%; }
 
 section:nth-child(3).animar .bottom-image,
-section:nth-child(9).animar .bottom-image  { bottom: 0; width: 100%; }
+section:nth-child(9).animar .bottom-image,
+section:nth-child(10).animar .bottom-image   { bottom: 0; width: 100%; }
 
 
 .image-wrapper div { z-index: 1; }
@@ -293,6 +299,9 @@ section:nth-child(8) .top-image, section:nth-child(8) .bottom-image {
     background-image: url('../img/card/aula9.png');
 }
 section:nth-child(9) .top-image, section:nth-child(9) .bottom-image {
+    background-image: url('../img/card/aulaTemplate.jpg');
+}
+section:nth-child(10) .top-image, section:nth-child(10) .bottom-image {
     background-image: url('../img/card/aulaTemplate.jpg');
 }
 /* Fim imagens de fundo */
@@ -427,13 +436,16 @@ li a:visited{
     list-style: disc;
     list-style-position: inside;
     border-radius: 5px;
+    line-height: 1.4em;
 }
 .sub-list-li:hover{
     background-color: #dfdfdf;
 }
 .sub-list-content{
-    display: inline-block;
-    padding-left: 0;
+    display: inline;
+    padding: 0;
+    white-space: normal;
+    word-break: break-word;
 }
 
 footer{
