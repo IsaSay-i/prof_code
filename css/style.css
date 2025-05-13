@@ -5,7 +5,7 @@
 
 body{
     font-family: Helvetica;
-    background-color: #150e2c;
+    background-color: #1d1636;  /* #150e2c   #1e1344;  #2b172e*/
     overflow-x: hidden;
 }
 
@@ -38,14 +38,13 @@ header.shadow {
   }
 
 main{
-    padding-top: clamp(65px, 8.5vh, 110px);
+    padding-top: clamp(65px, 4.7rem, 10vh);
 }
 
 main > h2{
-    width: 100%;
     padding: clamp(6px, 0.6vh, 10px);
     font-size: 1.45em;
-    background-color: #2e1a5a;
+    background-color: #362263;
     text-align: center;
     box-shadow: 0 0 20px #0000003b;
 }
@@ -445,4 +444,48 @@ footer{
 }
 footer > p{
     margin-left: 50px;
+}
+
+@media (min-device-width : 320px) and (max-device-width : 368px){
+    main{
+        padding-top: clamp(95px, 13.5vh, 15vh);
+    }
+    footer{
+        font-size: 0.8em;
+        padding: 20px;
+        justify-content: space-between;
+        background: rgb(0, 255, 13);
+    }
+    footer > p{
+        margin-left: 0;
+    }
+}
+
+@media (min-device-width : 369px) and (max-device-width : 430px){
+    footer{
+        font-size: 0.8em;
+        padding: 20px;
+        justify-content: space-between;
+        background: rgb(0, 4, 255);
+    }
+    footer > p{
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (max-height: 1370px){
+    main{
+        padding-top: clamp(90px, 7vh, 120px);
+    }
+
+    footer{
+        font-size: 0.8em;
+        padding: 20px;
+        justify-content: space-between;
+        background: red;
+    }
+
+    footer > p{
+        margin-left: 0;
+    }
 }

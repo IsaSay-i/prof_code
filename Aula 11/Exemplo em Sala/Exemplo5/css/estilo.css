@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,300&display=swap');
+
+@font-face {
+    font-family: StarJedi;
+    src: url(../assets/fonts/Starjedi.ttf)
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #151515;
+    color: #fff;
+    font-family: Poppins;    
+}
+
+header {
+    background-color: #000;
+    position: fixed;
+    height: 55px;
+    width: 100%;
+    top: 0;
+}
+
+header #titulo-header {
+    font-family: StarJedi;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ffff40;
+    display: block;
+    text-align: center;
+}
+
+nav {
+    background-color: #ffff40;
+    padding: 10px 0;
+    margin-top: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #000;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+#imagem-topo {
+    background-image: url(../images/topo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center -260px;
+    width: 100%;
+    min-height: 450px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.border-bottom-img {
+    border-bottom: 3px solid #ffff40;
+}
+
+h1 {
+    font-size: 41px;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: #4df 0px 0px 20px 2px;
+    text-shadow: #4df 0px 0px 6px, #4df 0px 0px 10px;
+    margin: 40px 0;
+    background: #1b2e32;
+    transition: all 0.5s;
+}
+
+h1:hover {
+    box-shadow: #4df 0px 0px 44px 12px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #a5e6f5;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 17px;
+    color: #8c8c8c;
+}
+
+section {
+    margin-top: 60px;
+}
+
+.imagem-lado {
+    display: flex;
+    align-items: center;
+}
+
+.imagem-lado div {
+    width: 50%;
+}
+
+.imagem-lado h3, .imagem-lado p {
+    text-align: right;
+}
+
+.imagem-lado div:nth-child(1) {
+    margin-right: 35px;
+}
+
+iframe {
+    display: block;
+    margin: 50px auto;
+}
+
+#item3 {
+    background-color: #3b3b3b;
+}
+
+#item3 p {
+    color: #fff;
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #ffff40;
+}
+
+footer p {
+    color: #000;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+footer ul li {
+    margin-right: 15px;
+}
+
+footer ul li i {
+    color: #000;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+#item1,#item2, #item3{
+    padding-top: 100px;
+}
+
+@media (mad-width: 780px) {
+    nav ul{
+        padding: 0;
+    }
+
+    nav ul li a span{
+        display: none;
+    }
+
+    header{
+        display: block;
+    }
+
+    .imagem-lado{
+        flex-direction: column;
+    }
+
+    .imagem-lado div{
+        width: 100%;
+    }
+
+    iframe{
+        max-width: 100%;
+    }
+}

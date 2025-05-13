@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+}
+
+nav{
+    background: linear-gradient( #02f3fb, #fb1f02);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 30px;
+    font-family: 'Lily Script One', cursive;
+    font-size: 1.5em;
+}
+
+nav div {
+    width: 100px;
+}
+
+nav div a{
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+    margin: 0px;
+}
+
+nav div a:hover{
+    background-color: #bc2d2d;
+}
+
+nav div .logo {
+    color: #fff;
+    font-size: 1.3em;
+    display: none;
+}
+
+figure{
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #ccc;
+    border:2px solid #f00;
+}
+
+figure img{
+    width: 100%;
+}
+
+@media (max-width: 780px){
+    #wrapper{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    nav{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 20%;
+    }
+
+    nav div{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    nav div .logo{
+        display: block;
+    }
+
+    nav div .texto{
+        display: none;
+    }
+
+    figure{
+        width: 100%;
+        padding: 10px;
+    }
+}
