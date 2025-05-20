@@ -44,7 +44,7 @@ section > i{
     width: 50px;
     padding: 0.2em;
     border-radius: 50%;
-    box-shadow: 0 0 3px #fff;
+    box-shadow: 0 0 10px #ffffff;
 }
 
 .preco{

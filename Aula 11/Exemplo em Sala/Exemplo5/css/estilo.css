@@ -170,7 +170,7 @@ footer ul li i {
     padding-top: 100px;
 }
 
-@media (mad-width: 780px) {
+@media (max-width: 780px) {
     nav ul{
         padding: 0;
     }
