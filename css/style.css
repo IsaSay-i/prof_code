@@ -458,8 +458,16 @@ footer > p{
     margin-left: 50px;
 }
 
-@media screen and (max-width : 364px){
-    header{ background: rgb(0, 255, 13); }
+@media screen and (max-width : 385px){
+    header{ 
+        display: flexbox;
+        flex-wrap: wrap;
+        background: rgb(0, 255, 13);
+    }
+
+    header > h1{
+        max-width: 170px;
+    }
     
     main{
         padding-top: clamp(95px, 6.4rem, 15vh);
@@ -477,7 +485,7 @@ footer > p{
     }
 }
 
-@media screen and (min-width : 365px) and (max-width : 430px){
+@media screen and (min-width : 386px) and (max-width : 430px){
     header{ background: rgb(0, 4, 255); }
 
     main{
